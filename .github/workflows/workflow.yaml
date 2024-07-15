@@ -12,6 +12,7 @@ jobs:
     with:
       name: "cartService"
       JOBID: "${{ github.run_number }}"
+      context: "./src"
     secrets:
       YC_SA_JSON_CREDENTIALS: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
       REPO_NAME: ${{ secrets.REPO_NAME }}
